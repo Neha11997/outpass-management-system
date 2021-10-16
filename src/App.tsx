@@ -1,4 +1,4 @@
-import Counter from './app/_components/Counter/counter';
+import Counter from './app/components/Counter/counter';
 import './app/scss/main.scss';
 
 const App = () => {
