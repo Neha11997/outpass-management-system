@@ -1,5 +1,5 @@
 import Counter from './app/components/Counter/counter';
-import './app/scss/main.scss';
+import './scss/main.scss';
 
 const App = () => {
   const name = 'neha';
