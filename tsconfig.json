@@ -16,8 +16,17 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "baseUrl": "src",
+    "types": [
+      "node"
+    ],
     "paths": {
-      "@app/*": ["app/*"]
+      "@components/*": ["app/components/"],
+      "@containers/*": ["app/containers/"],
+      "@styles/*": ["styles/"],
+      "@assets/*": ["assets/"],
+      "@helpers/*": ["app/helpers/"],
+      "@scenes/*": ["app/scenes/"],
+      "@utils/*": ["app/utils/"],
     },
   },
   "include": ["./src"]

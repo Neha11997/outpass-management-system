@@ -1,12 +1,22 @@
-import Counter from './app/components/Counter/counter';
-import './scss/main.scss';
+import React from 'react'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from 'react-router-dom'
 
-const App = () => {
-  const name = 'neha';
+import './scss/main.scss'
+
+import Routes from './Routes';
+
+const App: React.FunctionComponent = (): JSX.Element => {
   return (
-    <Counter name={name} age={10}/>
-  );
-  
+
+    <Router>
+      <Routes/>
+    </Router>
+  )
 }
 
 export default App

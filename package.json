@@ -8,11 +8,15 @@
     "babel": "babel src/index.ts --out-file dist/bundle.js"
   },
   "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@types/node": "^16.11.1",
     "@types/react-router-dom": "^5.3.1",
     "eslint-config-airbnb-typescript": "^14.0.1",
     "node-sass": "^6.0.1",
+    "path": "^0.12.7",
     "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react-dom": "^17.0.0",
+    "react-router-dom": "^5.3.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.15.7",
