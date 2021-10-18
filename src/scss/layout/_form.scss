@@ -1,0 +1,17 @@
+.oms-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(#f2f2f2, #c2c2c2);
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  margin: 20px;
+  max-width: 800px;
+  max-height: 700px;
+}

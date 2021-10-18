@@ -1,4 +1,4 @@
-import { Formik, Form } from 'formik';
+import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
@@ -11,30 +11,22 @@ const LoginContainer = () => {
     <>
       <form className="oms-form" noValidate autoComplete="off">
         <Card className="form-container">
-          <CardHeader title="Login Page" />
+          <CardHeader title="Forgot Password?" />
           <CardContent>
             <div>
               <TextField
                 fullWidth
-                id="username"
+                id="user email"
                 type="email"
-                label="Username"
-                placeholder="Username"
-                margin="normal"
-              />
-              <TextField
-                fullWidth
-                id="password"
-                type="password"
-                label="Password"
-                placeholder="Password"
+                label="User email"
+                placeholder="User email"
                 margin="normal"
               />
             </div>
           </CardContent>
           <CardActions>
             <Button variant="contained" size="large" color="secondary">
-              Login
+              Continue
             </Button>
           </CardActions>
         </Card>
