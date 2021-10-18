@@ -1,8 +1,11 @@
-import React from "react";
+import React from 'react';
 
 export interface RouteUtilProps {
   component: React.ElementType;
   path: string;
   extraProps?: Record<string, any>;
-  authenticationRequired: boolean;
-};
+  pathName: string;
+  guardedRoute: boolean;
+  authentication: boolean;
+  exact: boolean;
+}

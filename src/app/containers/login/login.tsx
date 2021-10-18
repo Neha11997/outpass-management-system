@@ -1,11 +1,9 @@
-import React from 'react';
-
 const LoginContainer = () => {
   return (
     <>
-      <div>loginCLoginContainer</div>
+      <div>Login</div>
     </>
   );
-}
+};
 
-export default LoginContainer
+export default LoginContainer;

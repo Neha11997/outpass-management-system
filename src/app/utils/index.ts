@@ -1,1 +1,1 @@
-export {default as RouteUtil} from './RouteUtils/RouteUtils';
+export { default as RouteUtil } from './RouteUtils/RouteUtils';

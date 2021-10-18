@@ -1,7 +1,5 @@
-import { LoginContainer } from "@containers/";
+import { LoginContainer } from '@containers/';
 
-const Login = () => (
-    <LoginContainer />
-)
+const Login = () => <LoginContainer />;
 
 export default Login;

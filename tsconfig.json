@@ -16,9 +16,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "baseUrl": "src",
-    "types": [
-      "node"
-    ],
+    "types": ["node"],
     "paths": {
       "@components/*": ["app/components/"],
       "@containers/*": ["app/containers/"],
@@ -26,8 +24,8 @@
       "@assets/*": ["assets/"],
       "@helpers/*": ["app/helpers/"],
       "@scenes/*": ["app/scenes/"],
-      "@utils/*": ["app/utils/"],
-    },
+      "@utils/*": ["app/utils/"]
+    }
   },
   "include": ["./src"]
 }

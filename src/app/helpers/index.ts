@@ -1,1 +1,1 @@
-export {default as GuardedRoute} from './GuardedRoute/GuardedRoute';
+export { default as GuardedRoute } from './GuardedRoute/GuardedRoute';
