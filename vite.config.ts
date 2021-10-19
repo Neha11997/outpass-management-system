@@ -15,6 +15,8 @@ export default defineConfig({
       '@helpers': path.resolve(__dirname, './src/app/helpers/'),
       '@scenes': path.resolve(__dirname, './src/app/scenes/'),
       '@utils': path.resolve(__dirname, './src/app/utils/'),
+      '@models': path.resolve(__dirname, './src/app/models/'),
+      '@constants': path.resolve(__dirname, './src/app/constants/'),
       '~': path.resolve(__dirname, 'node_modules'),
     },
   },

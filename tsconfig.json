@@ -24,7 +24,9 @@
       "@assets/*": ["assets/"],
       "@helpers/*": ["app/helpers/"],
       "@scenes/*": ["app/scenes/"],
-      "@utils/*": ["app/utils/"]
+      "@utils/*": ["app/utils/"],
+      "@models/*": ["app/models/"],
+      "@constants/*": ["app/constants/"]
     }
   },
   "include": ["./src"]

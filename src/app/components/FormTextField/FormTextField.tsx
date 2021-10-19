@@ -1,32 +1,47 @@
-import React from 'react';
-import { ErrorMessage, useField } from 'formik';
-import { TextField, Typography } from '@material-ui/core';
+import { FunctionComponent, useRef } from 'react';
+import { FastField, FieldProps } from 'formik';
+import TextField from '@mui/material/TextField';
 
-const FormErrorMessage = (props: any) => {
-  const { children } = props;
-  return <Typography variant="h6">{children}</Typography>;
-};
+import { TextInputFieldProps } from './types';
 
-const FormTextField = (props: any) => {
-  const { name, label = '' } = props;
-  const [field, , helpers] = useField(name);
-  const { setValue } = helpers;
+const TextInputField: FunctionComponent<TextInputFieldProps> = (
+  props: TextInputFieldProps
+): JSX.Element => {
+  const { name, defaultValue, inputProps } = props;
 
   return (
-    <React.Fragment>
-      <TextField
-        {...field}
-        {...props}
-        onChange={(e) => {
-          let { value } = e.target;
-          setValue(e.target.value);
-        }}
-        name={name}
-        label={label}
-      />
-      <ErrorMessage name={name} component={FormErrorMessage} />
-    </React.Fragment>
+    <FastField name={name}>
+      {({ form, meta }: FieldProps): JSX.Element => {
+        const inputValue =
+          defaultValue || meta.value || meta.initialValue || '';
+
+        const onChangeHandler = (event: any) => {
+          let { value } = event.target;
+          form.setFieldValue(name, value);
+        };
+
+        return (
+          <div>
+            <TextField
+              error={!!(meta.touched && (meta.error || meta.initialError))}
+              helperText={
+                meta.touched && (meta.error || meta.initialError)
+                  ? meta.error || meta.initialError
+                  : ''
+              }
+              {...inputProps}
+              onChange={onChangeHandler}
+            />
+          </div>
+        );
+      }}
+    </FastField>
   );
 };
 
-export default FormTextField;
+TextInputField.defaultProps = {
+  name: '',
+  defaultValue: '',
+};
+
+export default TextInputField;
